@@ -11,17 +11,33 @@ body
     grid-template-columns: 2fr 2.5fr;
 }
 
-.one
-{   border: solid black 2px;
+.background-pic
+{
     height: 100vh;
-    background-color: aqua;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.one
+{   
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.main-text
+{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 75px;
 }
 
 .two
 {
     border: solid black 2px;
     height: 100vh;
-    background-color: red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,12 +45,12 @@ body
 
 .form
 {
-    padding-top: 400px;
     display: grid;
-    grid-template-columns: auto auto;
-    height: 550px;
-    width: 100%;
-    background-color: yellow;
+    grid-template-columns: 1 auto;
+    height: 650px;
+    width: 50%;
+    border: black solid 1px;
+    border-radius: 10px;
     align-items: center;
     justify-content: center;
 }
@@ -42,7 +58,7 @@ body
 .im
 {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
 }
 
 label
